@@ -18,3 +18,24 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('test',function () {
+	/*
+	$client = new \GuzzleHttp\Client();
+
+	try{
+
+		$response = $client->request('POST', 'http://mtazamo.epizy.com/api.php', [
+				'form_params' => [
+					'email' => 'dgiacobelli0@arizona.edu',
+					'password' => '6hm9zwsvecmw',
+				]
+			]);
+	}catch(Exception $e) {
+		dd($e->getMessage());
+	}
+
+	return $res->getStatusCode();
+	*/
+	return view('test');
+});
